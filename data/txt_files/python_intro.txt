@@ -1,0 +1,58 @@
+Introduction to Python
+
+What Is Python?
+
+Python is a high-level, general-purpose programming language created by Guido van Rossum and first released in 1991. Its design philosophy emphasizes code readability and simplicity, captured in the motto "there should be one obvious way to do it." Over three decades later, Python has grown into one of the most widely used programming languages in the world, powering everything from simple automation scripts to large-scale machine learning systems.
+
+The language is interpreted, meaning code is executed line by line at runtime rather than compiled to machine code ahead of time. This makes Python exceptionally fast to write and debug — you can run a script immediately without a separate build step. The trade-off is that raw execution speed is slower than compiled languages like C or Rust, but for most applications this difference rarely matters.
+
+
+Why Python?
+
+Python's popularity comes from a combination of factors that few other languages match simultaneously.
+
+Readable syntax. Python uses indentation to define code blocks instead of braces or keywords. This forces consistent formatting and makes code feel closer to plain English. A Python function reads almost like pseudocode, which lowers the barrier for newcomers and keeps existing codebases maintainable.
+
+Batteries included. The Python standard library is extensive. Networking, file I/O, regular expressions, JSON parsing, unit testing, compression — most common tasks have a built-in module. You can accomplish a surprising amount before installing a single third-party package.
+
+A massive ecosystem. Beyond the standard library, the Python Package Index (PyPI) hosts over half a million packages. Whether you need HTTP clients, database drivers, data analysis tools, or machine learning frameworks, a well-maintained package almost certainly exists. Libraries like NumPy, Pandas, Matplotlib, Scikit-learn, PyTorch, and FastAPI have become industry standards in their respective domains.
+
+Versatility. Python is used for web development, data science, scientific computing, automation, scripting, DevOps, game development, embedded systems, and artificial intelligence. The same language skills transfer across domains, making Python a high-return investment of learning time.
+
+Community. Python has one of the largest and most welcoming programming communities. Extensive documentation, active forums, and countless tutorials make it easy to find answers and learn best practices.
+
+
+Core Concepts
+
+Variables and types. Python is dynamically typed — you do not declare types explicitly. A variable takes the type of the value assigned to it, and that type can change at any point during the program's execution. This flexibility speeds up development but requires discipline in larger codebases.
+
+Collections. Python provides four built-in collection types. Lists are ordered and mutable, meaning you can add, remove, or change elements after creation. Tuples are ordered but immutable — once created, their contents cannot change. Sets store unique unordered values and support fast membership testing. Dictionaries map keys to values and are the backbone of most data-passing patterns in Python code.
+
+Control flow. The if, elif, and else keywords handle branching logic. The for loop iterates over any iterable object — lists, strings, ranges, dictionaries, and more. The while loop continues executing as long as a given condition remains true. Python also supports list comprehensions, a concise syntax for building lists from other iterables in a single readable expression.
+
+Functions. Functions are defined with the def keyword. Python supports default arguments, keyword arguments, and arbitrary argument lists through the *args and **kwargs conventions. Functions are first-class objects, meaning they can be stored in variables, passed as arguments to other functions, and returned as values. This enables functional programming patterns like decorators and higher-order functions.
+
+Classes. Python supports object-oriented programming through classes. A class bundles state (instance attributes) and behavior (methods) into a single unit. Inheritance allows a child class to extend or override the behavior of a parent. Python also supports multiple inheritance, though single-inheritance designs are usually simpler to reason about.
+
+Modules and packages. Any Python file is a module that can be imported by another file. A directory containing an __init__.py file is a package. This system lets you organize large projects into logical units and share reusable code across files and projects.
+
+
+The Python Ecosystem at a Glance
+
+For data and AI work — the domain most relevant to this project — the essential stack is well established. NumPy provides fast array computation and linear algebra. Pandas handles tabular data manipulation and analysis. Matplotlib and Seaborn cover data visualization. Scikit-learn offers classical machine learning algorithms. PyTorch and TensorFlow power deep learning and neural network research. LangChain and LlamaIndex are the leading frameworks for building LLM-powered applications and retrieval-augmented generation pipelines, which is the core focus of this project.
+
+For web development, FastAPI and Django are the dominant choices. For testing, pytest is the de facto standard, valued for its minimal boilerplate and powerful plugin system. For package management, modern Python projects use uv, Poetry, or pip alongside virtual environments to isolate per-project dependencies and avoid version conflicts.
+
+
+Getting Started
+
+Install Python from the official website at python.org, or use a package manager appropriate to your operating system. Verify the installation by running python --version in a terminal. Python 3.10 or later is recommended for any new project.
+
+Create a virtual environment to keep project dependencies isolated from the global Python installation. Activate it before installing any packages. Use pip install to add libraries and pip freeze to capture the current dependency list. Modern tooling like uv speeds up this process considerably and is worth learning early.
+
+Write your first script in a .py file and execute it with python filename.py. As the project grows, organize code into modules and use a package manager's lock file to ensure reproducible installs across machines and environments.
+
+
+Closing Thoughts
+
+Python's staying power comes from a rare balance: it is simple enough for beginners to pick up in an afternoon, yet expressive and capable enough to build the production systems used by millions of people every day. Its dominance in machine learning and data science makes it especially relevant for projects like this one, where large language models, vector databases, and retrieval pipelines are the primary building blocks. A solid understanding of Python fundamentals — data types, control flow, functions, classes, and the import system — is the foundation on which everything else in this codebase rests.

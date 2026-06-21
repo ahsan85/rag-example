@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.venv_old/
+
+# Environment variables
+.env
+
+# Generated vector database (rebuild with: uv run python reindex.py)
+data/chroma/
+
+# Claude Code session data
+.claude/
+
+# Internal docs (plans, reports)
+docs/
+
