@@ -84,17 +84,17 @@ Opens at `http://127.0.0.1:7860`
 ## Project structure
 
 ```
-├── main.py           # Entry point — launches Gradio UI
-├── reindex.py        # Rebuilds the vector index from PDFs
+├── main.py          
+├── reindex.py      
 ├── data/
 │   └── pdf/          # ← Place your PDF files here
 ├── src/rag/
-│   ├── loader.py     # PDF loading with table-aware extraction
-│   ├── embedder.py   # OpenAI embeddings wrapper
-│   ├── store.py      # ChromaDB vector store
-│   ├── pipeline.py   # RAG orchestration (retrieve + generate)
-│   └── ui.py         # Gradio chat interface
-└── .env.example      # API key template
+│   ├── loader.py    
+│   ├── embedder.py   
+│   ├── store.py      
+│   ├── pipeline.py   
+│   └── ui.py        
+└── .env.example      
 ```
 
 ## Tech stack
